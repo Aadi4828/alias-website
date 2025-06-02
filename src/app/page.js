@@ -49,14 +49,16 @@ export default function Home() {
       { name: 'Minimal Tee', price: '$27', image:  '/IIT-Bombay-400076-navy-Blue-Base-Back-Design.jpg' },
     ].map((product, idx) => (
       <div key={idx} className="bg-white rounded-lg shadow-sm p-4 hover:shadow-lg hover:-translate-y-1 transition-transform duration-300">
-        <img
-          src={product.image}
-          alt={product.name}
-          className="w-full h-64 object-cover rounded-md mb-4"
-        />
-        <h4 className="text-lg font-semibold">{product.name}</h4>
-        <p className="text-gray-500">{product.price}</p>
-      </div>
+  <Image
+    src={product.image}
+    alt={product.name}
+    width={800}
+    height={600}
+    className="w-full h-64 object-cover rounded-md mb-4"
+  />
+  <h4 className="text-lg font-semibold">{product.name}</h4>
+  <p className="text-gray-500">{product.price}</p>
+</div>
     ))}
   </div>
 </section>
