@@ -68,7 +68,7 @@ export default function Home() {
     <div>
       <h3 className="text-3xl font-bold mb-4">About Alias</h3>
       <p className="text-gray-700 text-lg leading-relaxed">
-        Alias isn’t just another T-shirt brand — it's a canvas for self-expression.
+        Alias isn&apos;t just another T-shirt brand — it&apos;s a canvas for self-expression.
         We create bold, custom designs that help you wear your identity with pride.
         Every piece is made with meaning, because your style deserves more than basic.
       </p>
@@ -76,9 +76,11 @@ export default function Home() {
 
     {/* Optional Image */}
     <div>
-      <img
+      <Image
         src="https://source.unsplash.com/600x600/?tshirt,person"
         alt="About Alias"
+        width={600}
+        height={600}
         className="w-full h-auto rounded-xl shadow-sm"
       />
     </div>
